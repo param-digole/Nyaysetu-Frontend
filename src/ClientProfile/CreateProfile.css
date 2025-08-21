@@ -1,0 +1,112 @@
+/* CreateProfile.css */
+.body2{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  background-image: url('../LawyerCaseHandling/background.jpeg');
+  overflow: hidden;
+}
+.create-container {
+  max-width: 600px;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  height: 80%;
+  overflow-y: scroll;
+}
+
+.create-container h2 {
+  text-align: center;
+  color: #800020;
+}
+
+.create-profile label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.create-profile input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.error-text {
+  color: red;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+/* 🌐 Responsive Design */
+@media (max-width: 1024px) {
+  .create-container {
+    max-width: 80%;
+    height: 85%;
+    padding: 25px;
+  }
+
+  .create-profile input {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .body2 {
+    background-position: center;
+    background-size: cover;
+    padding: 15px;
+  }
+
+  .create-container {
+    max-width: 90%;
+    height: auto;
+    max-height: 90vh;
+    padding: 20px;
+  }
+
+  .create-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .create-profile label {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .body2 {
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .create-container {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: none;
+  }
+
+  .create-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .create-profile input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .error-text {
+    font-size: 12px;
+  }
+}
